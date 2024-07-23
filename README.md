@@ -24,7 +24,7 @@ PUBLIC_SUPABASE_URL=your_supabase_url
 PUBLIC_SUPABASE_ANON_KEY=yout_supabase_anon_key
 ```
 
-## Supabase Auth
+## Supabase Auth
 
 This template uses Supabase Auth to handle user authentication. All the Safeguard logic is stored in "src/hooks.server.ts" file. You can customize the logic to fit your needs.
 
@@ -56,6 +56,12 @@ const authGuard: Handle = async ({ event, resolve }) => {
 
 	return resolve(event);
 };
+```
+
+## Running the project
+
+```bash
+npm run dev
 ```
 
 ## Building
